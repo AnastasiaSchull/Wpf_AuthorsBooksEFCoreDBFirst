@@ -1,0 +1,31 @@
+# Build Folders
+bin/
+obj/
+
+# Visual Studio Specific
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider and JetBrains
+.idea/
+
+# NuGet Packages
+*.nupkg
+packages/
+*.snupkg
+
+# Entity Framework Migrations
+Migrations/
+
+# Logs and Other Files
+*.log
+*.cache
+*.config
+*.bak
+
+# Sensitive Data (AppSettings)
+appsettings.json
+appsettings.Development.json
