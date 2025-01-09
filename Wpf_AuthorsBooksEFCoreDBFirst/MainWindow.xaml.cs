@@ -1,24 +1,24 @@
-﻿using System.Text;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using Wpf_AuthorsBooksEFCoreDBFirst.Models;
 
 namespace Wpf_AuthorsBooksEFCoreDBFirst
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+  
     public partial class MainWindow : Window
     {
+        private readonly BooksContext _context = new();
+
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = _context.Authors.Local.ToObservableCollection();
+            _context.Authors.Load();
         }
     }
 }
