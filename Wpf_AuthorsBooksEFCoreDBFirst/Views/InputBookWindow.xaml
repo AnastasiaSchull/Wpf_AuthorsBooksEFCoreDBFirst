@@ -1,0 +1,19 @@
+﻿   <Window x:Class="Wpf_AuthorsBooksEFCoreDBFirst.Views.InputBookWindow"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:local="clr-namespace:Wpf_AuthorsBooksEFCoreDBFirst.Views"
+         mc:Ignorable="d"
+        Title="Add New Book" Height="200" Width="300">
+        <StackPanel Margin="20">
+            <TextBlock Text="Enter Book Title:"/>
+            <TextBox Name="BookTitleTextBox" Margin="0,5"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+                <Button Content="Save" Width="80" Margin="5" Click="Save_Click"/>
+                <Button Content="Cancel" Width="80" Margin="5" Click="Cancel_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Window>
+
