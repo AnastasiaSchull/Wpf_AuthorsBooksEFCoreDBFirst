@@ -59,8 +59,8 @@ namespace Wpf_AuthorsBooksEFCoreDBFirst.Models
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {         
-            optionsBuilder.UseLazyLoadingProxies();
+        {
+            optionsBuilder.UseLazyLoadingProxies(false);//отключила          
         }
     }
 }

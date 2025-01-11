@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Wpf_AuthorsBooksEFCoreDBFirst.Models
+﻿namespace Wpf_AuthorsBooksEFCoreDBFirst.Models
 {
     public class Author
     {
         public int Id { get; set; }
         public string? Name { get; set; }
-        public virtual ICollection<Book> Books { get; set; } = new List<Book>();
+        public virtual ICollection<Book> Books { get; set; } = new List<Book>();             
     }
-
 }

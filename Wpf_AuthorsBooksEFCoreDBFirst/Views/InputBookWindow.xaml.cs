@@ -1,10 +1,7 @@
 ﻿using System.Windows;
 
 namespace Wpf_AuthorsBooksEFCoreDBFirst.Views
-{
-    /// <summary>
-    /// Interaction logic for InputBookWindow.xaml
-    /// </summary>
+{ 
     public partial class InputBookWindow : Window
     {
         public string BookTitle { get; private set; }
